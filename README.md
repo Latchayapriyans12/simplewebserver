@@ -36,7 +36,7 @@ Start the server script and check for errors.
 Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 
 ## PROGRAM:
-`from http.server import HTTPServer, BaseHTTPRequestHandler
+'''from http.server import HTTPServer, BaseHTTPRequestHandler
 
 content ='''
 <!DOCTYPE html>
@@ -70,7 +70,7 @@ content ='''
 
 
 
-class MyServer(BaseHTTPRequestHandler):
+'''class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
         print("Get request received...")
         self.send_response(200) 
@@ -81,8 +81,8 @@ class MyServer(BaseHTTPRequestHandler):
 print("This is my webserver") 
 server_address =('',8000)
 httpd = HTTPServer(server_address,MyServer)
-httpd.serve_forever()
-`
+httpd.serve_forever()'''
+'''
 
 ## OUTPUT:
 ![alt text](image.png)
