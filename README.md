@@ -67,7 +67,6 @@ content ='''
         </table>
     </body>
 </html>
-'''
 
 
 
